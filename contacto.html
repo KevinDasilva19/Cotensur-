@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotensur</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">Cotensur</a>
+        
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nuestrosRecursos.html">Nuestros Recursos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Areas
+                  </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Agua</a>
+                <a class="dropdown-item" href="#">Energia</a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div id="contenedor">
+        <section>
+            <h2>
+                Contacto
+            </h2>
+        </section>
+
+        <form action="">
+            <h2>Contactese con Nosotros</h2>
+            <input type="text" name="nombre" placeholder="Nombre" class="inputs">
+            <input type="text" name="empresa" placeholder="Empresa" class="inputs">
+            <input type="email" name="email" placeholder="Email" class="inputs">
+            <textarea name="consulta"  placeholder="Escriba aqui su Consulta" class="inputs"></textarea>
+            </textarea>
+            <input type="button" value="ENVIAR" id="boton" class="inputs">
+        </form>
+
+        <div class="div">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.35492131486!2d-58.260226385048234!3d-34.721447071243276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e6aaeb69aa3%3A0xae7f98fff55ad95b!2sAlsina%20193%2C%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1629137785981!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <footer class="footer">
+            <h6>
+                0810-222-1936(Cotensur)
+            </h6>
+
+            <h6>
+                Alsina 193, Quilmes
+            </h6>
+        </footer>
+        
+      </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+#contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "parrafo1 parrafo1"
+    "img1 img2"
+    "parrafo2 parrafo2"
+    "footer footer"
+    ;
+}
+
+* {
+    background-color: #343A40;
+}
+.parrafo1 {
+    grid-area: parrafo1;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.parrafo2 {
+    grid-area: parrafo2;
+}
+footer {
+    grid-area: footer;
+}
+
+p {
+    padding: 4px;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    background-color: #343A40;
+    color: #ffffff80;
+    
+}
+
+footer {
+    color: #ffffff80;
+    transform: translateY(25px);
+}
+footer h6 {
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer {
+    padding-left: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.enlaceAgua,
+section.enlaceEnergia,
+h2 {
+    background-color: rgb(53, 53, 230);
+    height: 270px;
+}
+section.enlaceAgua,
+section.enlaceEnergia {
+    transform: translatex(10px);
+}
+
+
+h2 a {
+    text-decoration: none;
+    color: black;
+    transition: font-size 2s;
+}
+h2 {
+    text-align: center;
+}
+h2 a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+img {
+    width: 270px;
+    display: block;
+    margin: auto;
+}
+
+.imgEdenor {
+    transform: translateY(50px);
+}
+
+@media only screen and (min-width: 360px) and (max-width:768px) {
+    img {
+        display: block;
+        margin: auto;
+        width: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

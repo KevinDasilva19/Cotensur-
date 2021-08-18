@@ -1,0 +1,97 @@
+* {
+    background-color: #343A40;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    border: #ffffff85 2px solid;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+
+section h2 {
+    color: #ffffff80;
+    font-size: 40px;
+    
+}
+
+
+input, 
+textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.inputs {
+    margin-bottom: 20px;
+    background: #ffffff80;
+    color: black;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+}
+form h2 {
+    color: #ffffff80;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#boton {
+    background: rgb(63, 63, 204);
+    color: #ffffff;
+    padding: 20px;
+}
+#boton:hover {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(70px);
+    color: #ffffff80;
+}
+
+#contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2,49%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "contacto contacto"
+    "mapa formulario"
+    "footer footer"
+    ;
+}
+section h2 {
+    grid-area: contacto;
+}
+div.div {
+    grid-area: mapa;
+}
+form {
+    grid-area: formulario;
+}
+.footer {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
