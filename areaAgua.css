@@ -1,0 +1,47 @@
+#contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas: 
+    "secAgua secAgua"
+    "carrusel lista"
+    "footer footer"
+    ;
+}
+
+section h2 {
+    grid-area: secAgua;
+}
+
+#carrusel{
+    grid-area: carrusel;
+}
+
+section.lista {
+    grid-area: lista;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#carrusel{
+    width: 400px;
+    height: 400px;
+}
