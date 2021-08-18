@@ -24,6 +24,15 @@ footer {
     grid-area: footer;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(70px);
+    color: black;
+}
+
 
 
 
