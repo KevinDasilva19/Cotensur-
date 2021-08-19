@@ -1,19 +1,18 @@
 * {
     background-color: #343A40;
 }
-
 #contenedor {
     display: grid;
     grid-gap: 2px;
     grid-template-areas: 
-    "secAgua secAgua"
+    "secEnergia secEnergia"
     "carrusel lista"
     "footer footer"
     ;
 }
 
 section h2 {
-    grid-area: secAgua;
+    grid-area: secEnergia;
 }
 
 #carrusel{
@@ -48,7 +47,7 @@ section h2 {
 
 .lista {
     font-size: 20px;
-    padding: 5px;
+    padding: 7px;
     color: #ffffff80;
 }
 
@@ -56,22 +55,13 @@ section h2 {
     position: relative;
     left: 550px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#carrusel{
-    width: 400px;
+#carrusel {
+    width: 630px;
     height: 400px;
 }
+
+
+
+
+
+
