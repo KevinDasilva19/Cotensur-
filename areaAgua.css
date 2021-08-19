@@ -1,3 +1,7 @@
+* {
+    background-color: #343A40;
+}
+
 #contenedor {
     display: grid;
     grid-gap: 2px;
@@ -30,11 +34,28 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     transform: translateY(70px);
-    color: black;
+    color:#ffffff80;
 }
 
+#carrusel, .lista {
+    margin: auto;
+}
 
+section h2 {
+    font-size: 40px;
+    color: #ffffff80;
+}
 
+.lista {
+    font-size: 25px;
+    padding: 5px;
+    color: #ffffff80;
+}
+
+section h2 {
+    position: relative;
+    left: 550px;
+}
 
 
 
