@@ -121,7 +121,11 @@ form {
     }
 
     div iframe {
-        width: 445px;
+        width: 300px;
+    }
+
+    form {
+        width: 300px;
     }
 
 }

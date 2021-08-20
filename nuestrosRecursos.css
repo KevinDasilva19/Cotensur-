@@ -44,9 +44,10 @@ section.recursos {
     color: #ffffff80;
 }
 
-ul li {
+ol li {
     padding-top: 15px;
     color: #ffffff80;
+    list-style-type: circle;
 }
 
 @media only screen and (min-width: 360px) and (max-width:768px) {
