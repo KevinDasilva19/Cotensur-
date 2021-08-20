@@ -5,6 +5,8 @@
 #contenedor {
     display: grid;
     grid-gap: 2px;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     "secAgua secAgua"
     "carrusel lista"
@@ -12,7 +14,7 @@
     ;
 }
 
-section h2 {
+section.parrafo {
     grid-area: secAgua;
 }
 
@@ -52,11 +54,60 @@ section h2 {
     color: #ffffff80;
 }
 
+    
 section h2 {
-    position: relative;
-    left: 550px;
+    text-align: center;
+    width: 200%;
 }
 
+@media only screen and (min-width: 360px) and (max-width:768px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "secAgua"
+        "carrusel"
+        "lista"
+        "footer"
+        ;
+    }
+
+    section h2 {
+        grid-area: secAgua;
+    }
+    
+    #carrusel{
+        grid-area: carrusel;
+    }
+    
+    section.lista {
+        grid-area: lista;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+    section h2 {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
