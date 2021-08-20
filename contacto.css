@@ -14,8 +14,8 @@ form {
 section h2 {
     color: #ffffff80;
     font-size: 40px;
-    position: relative;
-    left: 600px;
+    width: 200%;
+    text-align: center;
 }
 
 
@@ -89,7 +89,89 @@ form {
 }
 
 
+@media only screen and (min-width: 360px) and (max-width:768px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "contacto "
+        "mapa"
+         "formulario"
+        "footer"
+        ;
+    }
+    section h2 {
+        grid-area: contacto;
+    }
+    div.div {
+        grid-area: mapa;
+    }
+    form {
+        grid-area: formulario;
+    }
+    .footer {
+        grid-area: footer;
+    }
 
+    section h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    div iframe {
+        width: 445px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "contacto "
+        "mapa"
+         "formulario"
+        "footer"
+        ;
+    }
+    section h2 {
+        grid-area: contacto;
+    }
+    div.div {
+        grid-area: mapa;
+    }
+    form {
+        grid-area: formulario;
+    }
+    .footer {
+        grid-area: footer;
+    }
+
+    section h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    div iframe {
+        width: 730px;
+    }
+
+    form {
+        width: 730px;
+    }
+
+
+
+
+
+
+
+}
 
 
 
