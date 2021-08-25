@@ -63,9 +63,7 @@
     div.div {
         width: 650px;
     }
-    div iframe {
-        transform: translateX(3%);
-    }
+    
     
     #contenedor {
         display: grid;
