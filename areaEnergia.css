@@ -96,7 +96,10 @@ section h2 {
         width: 400px;
         margin: auto ;
     }
-
+    
+    #carrusel {
+        width: 90%;
+    }
 
 }
 
@@ -137,7 +140,9 @@ section h2 {
         margin: auto ;
     }
 
-
+    #carrusel {
+        width: 90%;
+    }
 
 
 
