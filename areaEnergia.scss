@@ -1,0 +1,112 @@
+* {
+    background-color: #343A40;
+}
+#contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas: 
+    "secEnergia secEnergia"
+    "carrusel lista"
+    "footer footer"
+    ;
+    section h2 {
+        grid-area: secEnergia;
+        font-size: 40px;
+        color: #ffffff80;
+        text-align: center;
+        width: 200%;
+    }
+    
+    #carrusel{
+        grid-area: carrusel;
+        margin: auto;
+        width: 630px;
+        height: 400px;
+    }
+    
+    section.lista {
+        grid-area: lista;
+        margin: auto;
+        font-size: 20px;
+        padding: 7px;
+        color: #ffffff80;
+    }
+    
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: translateY(70px);
+        color:#ffffff80;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width:768px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "secEnergia"
+        "carrusel"
+        "lista"
+        "footer"
+        ;
+        section h2 {
+            grid-area: secEnergia;
+            width: 100%;
+            text-align: center;
+        }
+        
+        #carrusel{
+            grid-area: carrusel;
+            margin: auto ;
+            width: 90%;
+            
+        }
+        
+        section.lista {
+            grid-area: lista;
+        }
+        
+        footer {
+            grid-area: footer;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "secEnergia"
+        "carrusel"
+        "lista"
+        "footer"
+        ;
+        section h2 {
+            grid-area: secEnergia;
+            width: 100%;
+            text-align: center;
+        }
+        
+        #carrusel{
+            grid-area: carrusel;
+        }
+        
+        section.lista {
+            grid-area: lista;
+        }
+        
+        footer {
+            grid-area: footer;
+        }
+    }
+
+}
