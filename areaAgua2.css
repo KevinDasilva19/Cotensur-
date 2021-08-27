@@ -1,0 +1,127 @@
+* {
+  background-color: #343A40;
+}
+
+#contenedor {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "secAgua secAgua" "carrusel lista" "footer footer";
+}
+#contenedor section {
+  grid-area: secAgua;
+}
+#contenedor section h2 {
+  font-size: 40px;
+  color: #ffffff80;
+  text-align: center;
+}
+#contenedor #carrusel {
+  grid-area: carrusel;
+  margin: auto;
+}
+#contenedor section.lista {
+  grid-area: lista;
+  margin: auto;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff80;
+}
+#contenedor footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateY(70px);
+  color: #ffffff80;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  #contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "secAgua" "carrusel" "lista" "footer";
+  }
+  #contenedor section h2 {
+    grid-area: secAgua;
+    width: 100%;
+  }
+  #contenedor div#carrusel {
+    grid-area: carrusel;
+    width: 80%;
+  }
+  #contenedor section.lista {
+    grid-area: lista;
+  }
+  #contenedor footer {
+    grid-area: footer;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+  #contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "secAgua" "carrusel" "lista" "footer";
+  }
+  #contenedor section h2 {
+    grid-area: secAgua;
+    width: 100%;
+  }
+  #contenedor div#carrusel {
+    grid-area: carrusel;
+    width: 80%;
+  }
+  #contenedor section.lista {
+    grid-area: lista;
+    font-size: 25px;
+  }
+  #contenedor footer {
+    grid-area: footer;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 1200px) {
+  #contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "secAgua secAgua" "carrusel lista" "footer footer";
+  }
+  #contenedor section {
+    grid-area: secAgua;
+  }
+  #contenedor section h2 {
+    font-size: 40px;
+    color: #ffffff80;
+    text-align: center;
+  }
+  #contenedor div#carrusel {
+    grid-area: carrusel;
+    margin: auto;
+    width: 380px;
+  }
+  #contenedor section.lista {
+    grid-area: lista;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff80;
+  }
+  #contenedor footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(70px);
+    color: #ffffff80;
+  }
+}
+
+/*# sourceMappingURL=areaAgua2.css.map */

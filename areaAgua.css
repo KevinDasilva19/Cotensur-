@@ -80,6 +80,7 @@ section h2 {
     
     #carrusel{
         grid-area: carrusel;
+        width: 10%;
     }
     
     section.lista {
