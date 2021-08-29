@@ -68,10 +68,10 @@
 
         <form action="formulario.php" method="POST">
             <h2>Contactese con Nosotros</h2>
-            <input type="text" name="nombre" placeholder="Nombre" class="inputs">
-            <input type="text" name="empresa" placeholder="Empresa" class="inputs">
-            <input type="email" name="email" placeholder="Email" class="inputs">
-            <textarea name="consulta"  placeholder="Escriba aqui su Consulta" class="inputs"></textarea>
+            <input type="text" name="nombre" placeholder="Nombre" class="inputs" required>
+            <input type="text" name="empresa" placeholder="Empresa" class="inputs" required>
+            <input type="email" name="email" placeholder="Email" class="inputs" required>
+            <textarea name="consulta"  placeholder="Escriba aqui su Consulta" class="inputs" required></textarea>
             </textarea>
             <input type="button" value="ENVIAR" id="boton" class="inputs">
         </form>

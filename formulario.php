@@ -8,6 +8,6 @@ $consulta = $_POST["consulta"];
 $contenido = "Nombre: " . $nombre . "\nEmpresa: " . $empresa .  "\nEmail: " . $email . "\nConsulta: " . $consulta ;
 
 mail($destino, "Contacto", $contenido);
-header("location:index.html");
+header("Location:index.html");
 
 ?>
