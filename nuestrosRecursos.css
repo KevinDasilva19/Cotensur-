@@ -3,56 +3,32 @@
 }
 
 #contenedor {
-  display: -ms-grid;
   display: grid;
   grid-gap: 2px;
-  -ms-grid-columns: (49%)[2];
-      grid-template-columns: repeat(2, 49%);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "recursos recursos" "imagenes lista" "footer footer";
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "recursos recursos" "imagenes lista" "footer footer";
 }
-
 #contenedor section.recursos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: recursos;
   text-align: center;
   color: #ffffff80;
 }
-
 #contenedor .lista {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: lista;
 }
-
 #contenedor #fotos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: imagenes;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  transform: translateX(10px);
 }
-
 #contenedor footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 15px;
-  -webkit-transform: translateY(70px);
-          transform: translateY(70px);
+  transform: translateY(70px);
   color: #ffffff80;
 }
-
 #contenedor div ol li {
   padding-top: 15px;
   color: #ffffff80;
@@ -61,18 +37,13 @@
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   #contenedor {
-    display: -ms-grid;
     display: grid;
     grid-gap: 2px;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: (auto)[4];
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "recursos" "imagenes" "lista" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "recursos" "imagenes" "lista" "footer";
   }
   #contenedor section.recursos {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: recursos;
     text-align: center;
     font-size: 40px;
@@ -80,22 +51,17 @@
     width: auto;
   }
   #contenedor .lista {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: lista;
     width: 80;
   }
   #contenedor #fotos {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: imagenes;
     margin: auto;
     width: 80%;
   }
   #contenedor .footer {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
     grid-area: footer;
   }
 }
-/*# sourceMappingURL=nuestrosRecursos.css.map */
+
+/*# sourceMappingURL=nuestrosRecursos2.css.map */

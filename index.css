@@ -3,49 +3,27 @@
 }
 
 #contenedor {
-  display: -ms-grid;
   display: grid;
   grid-gap: 2px;
-  -ms-grid-columns: (49%)[2];
-      grid-template-columns: repeat(2, 49%);
-  -ms-grid-rows: (auto)[4];
-      grid-template-rows: repeat(4, auto);
-      grid-template-areas: "parrafo1 parrafo1" "img1 img2" "parrafo2 parrafo2" "footer footer";
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "parrafo1 parrafo1" "img1 img2" "parrafo2 parrafo2" "footer footer";
 }
-
 #contenedor .parrafo1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: parrafo1;
 }
-
 #contenedor .img1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: img1;
 }
-
 #contenedor .img2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: img2;
 }
-
 #contenedor .parrafo2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: parrafo2;
 }
-
 #contenedor footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
 }
-
 #contenedor p {
   padding: 4px;
   font-style: italic;
@@ -54,45 +32,33 @@
   background-color: #343A40;
   color: #ffffff80;
 }
-
 #contenedor section img {
   width: 270px;
   display: block;
   margin: auto;
 }
-
 #contenedor section .imgEdenor {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
 }
-
 #contenedor footer {
   color: #ffffff80;
-  -webkit-transform: translateY(25px);
-          transform: translateY(25px);
+  transform: translateY(25px);
   padding-left: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 #contenedor footer h6 {
   font-weight: bold;
   font-size: 15px;
 }
-
 #contenedor footer section.enlaceAgua,
 #contenedor footer section.enlaceEnergia {
-  -webkit-transform: translatex(10px);
-          transform: translatex(10px);
+  transform: translatex(10px);
 }
-
 #contenedor footer section.enlaceAgua h2,
 #contenedor footer section.enlaceEnergia h2 {
   background-color: #3535e6;
   height: 270px;
 }
-/*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=index2.css.map */
