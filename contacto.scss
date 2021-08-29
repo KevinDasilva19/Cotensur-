@@ -1,0 +1,170 @@
+* {
+    background-color: #343A40;
+}
+
+#contenedor {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2,49%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "contacto contacto"
+    "mapa formulario"
+    "footer footer"
+    ;
+        section h2 {
+            grid-area: contacto;
+            color: #ffffff80;
+            font-size: 35px;
+            width: 200%;
+            text-align: center;
+        }
+        div.div {
+            grid-area: mapa;
+            width: 650px;
+        }
+        form {
+            grid-area: formulario;
+            width: 450px;
+            margin: auto;
+            border: #ffffff85 2px solid;
+            padding: 10px 20px;
+            box-sizing: border-box;
+                h2 {
+                    color: #ffffff80;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    margin-bottom: 20px;
+                    background: #ffffff80;
+                    color: black;
+                }
+                textarea {
+                    width: 100%;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    min-height: 100px;
+                    max-height: 100px;
+                    max-width: 100%;
+                    background-color: #ffffff80;
+                }
+                #boton {
+                    background: rgb(63, 63, 204);
+                    color: #ffffff;
+                    padding: 20px;
+                }
+                #boton:hover {
+                    cursor: pointer;
+                }
+        }
+        .footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            transform: translateY(5px);
+            color: #ffffff80;
+        }
+    
+        .form, .div {
+            margin: auto;
+        }
+}
+
+@media only screen and (min-width: 360px) and (max-width:768px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "contacto "
+        "mapa"
+        "formulario"
+        "footer"
+        ;
+            section h2 {
+                grid-area: contacto;
+            }
+            div.div {
+                grid-area: mapa;
+            }
+            form {
+                grid-area: formulario;
+            }
+            .footer {
+                grid-area: footer;
+            }
+    
+            section h2 {
+                width: 100%;
+                text-align: center;
+            }
+    
+            div.div {
+                margin: auto;
+                width: 90%;
+            }
+    
+            form {
+                margin: auto;
+                width: 90%;
+            }
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+    #contenedor {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "contacto "
+        "mapa"
+        "formulario"
+        "footer"
+        ;
+            section h2 {
+                grid-area: contacto;
+            }
+            iv.div {
+                grid-area: mapa;
+            }
+            form {
+                grid-area: formulario;
+            }
+            .footer {
+                grid-area: footer;
+            }
+    
+            section h2 {
+                width: 100%;
+                text-align: center;
+            }
+    
+            div.div {
+                margin: auto;
+                width: 90%;
+            }
+    
+            form {
+                margin: auto;
+                width: 90%;
+            }
+}
+
+}
+
+
+
+
+
+
+

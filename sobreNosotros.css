@@ -7,21 +7,27 @@ section h2 {
   text-align: center;
   padding: 10px;
 }
+
 section p {
   text-align: justify;
   padding: 15px;
 }
 
 .footer {
-  transform: translateY(56px);
+  -webkit-transform: translateY(56px);
+          transform: translateY(56px);
   padding-left: 14px;
   padding-right: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .footer h6 {
   font-weight: bold;
   font-size: 15px;
 }
-
 /*# sourceMappingURL=sobreNosotros.css.map */
