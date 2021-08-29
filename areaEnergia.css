@@ -3,87 +3,140 @@
 }
 
 #contenedor {
+  display: -ms-grid;
   display: grid;
   grid-gap: 2px;
-  grid-template-areas: "secEnergia secEnergia" "carrusel lista" "footer footer";
+      grid-template-areas: "secEnergia secEnergia"
+ "carrusel lista"
+ "footer footer";
 }
+
 #contenedor section h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: secEnergia;
   font-size: 40px;
   color: #ffffff80;
   text-align: center;
   width: 200%;
 }
+
 #contenedor #carrusel {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: carrusel;
   margin: auto;
   width: 630px;
   height: 400px;
 }
+
 #contenedor section.lista {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: lista;
   margin: auto;
   font-size: 20px;
   padding: 7px;
   color: #ffffff80;
 }
+
 #contenedor footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  transform: translateY(70px);
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
   color: #ffffff80;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   #contenedor {
+    display: -ms-grid;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "secEnergia" "carrusel" "lista" "footer";
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "secEnergia"
+ "carrusel"
+ "lista"
+ "footer";
   }
   #contenedor section h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: secEnergia;
     width: 100%;
     text-align: center;
   }
   #contenedor #carrusel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: carrusel;
     margin: auto;
     width: 90%;
   }
+  #contenedor div div img {
+    width: 95%;
+  }
   #contenedor section.lista {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: lista;
   }
   #contenedor footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: footer;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #contenedor {
+    display: -ms-grid;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "secEnergia" "carrusel" "lista" "footer";
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "secEnergia"
+ "carrusel"
+ "lista"
+ "footer";
   }
   #contenedor section h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: secEnergia;
     width: 100%;
     text-align: center;
   }
   #contenedor #carrusel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: carrusel;
   }
   #contenedor section.lista {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: lista;
   }
   #contenedor footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: footer;
   }
 }
-
-/*# sourceMappingURL=areaEnergia2.css.map */
+/*# sourceMappingURL=areaEnergia.css.map */

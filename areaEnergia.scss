@@ -66,7 +66,14 @@
             width: 90%;
             
         }
-        
+        div {
+            div {
+                img {
+                    width: 97%;
+                    
+                }
+            }
+        }
         section.lista {
             grid-area: lista;
         }
@@ -99,6 +106,7 @@
         #carrusel{
             grid-area: carrusel;
         }
+        
         
         section.lista {
             grid-area: lista;
