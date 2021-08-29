@@ -65,9 +65,18 @@
             grid-area: carrusel;
             width: 80%;
         }
+        div {
+            div {
+                img {
+                    width: 98%;
+                    margin: auto;
+                }
+            }
+        }
         
         section.lista {
             grid-area: lista;
+            width: 90%;
         }
         
         footer {
